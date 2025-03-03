@@ -1,0 +1,43 @@
+/* Fondo con gradiente */
+body {
+    /*background: linear-gradient(to top, grey, black);*/
+    background: url('https://images.hdqwalls.com/download/sunrise-sunset-road-9m-3840x2160.jpg') no-repeat center center;
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.list-group-item {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.list-group-item:active {
+    background-color: #f0a500;
+    color: white;
+}
+
+.list-group-item:focus {
+    box-shadow: 0 0 5px rgba(252, 87, 94, 0.5);
+}

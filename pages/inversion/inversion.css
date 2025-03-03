@@ -1,0 +1,13 @@
+/* Cambiar el color al pasar el ratón por encima */
+.nav-link:hover {
+    background-color: white !important;
+    color: black !important;
+}
+/* Estilo personalizado para la imagen */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* El alto se ajusta al tamaño de la pantalla */
+    background: url('../../assets/tree.jpg') no-repeat center center;
+    background-size: cover;
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bienvenido</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../main/style.css">
+</head>
+<body>
+    <header class="bg-dark text-white">
+        <div class="container d-flex flex-wrap justify-content-center py-3">
+            <a href="../../main/index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <span class="fs-3 text-white">Finanzas Personales</span>
+            </a>
+            <div class="nav-center">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="../login/index.html" class="nav-link text-white">Iniciar Sesión</a></li>
+                    <li class="nav-item"><a href="../register/index.html" class="nav-link text-white">Registrarte</a></li>
+                    <li class="nav-item"><a href="..//menu/index.html" class="nav-link text-white">Menu</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div>
+        <div class="container">
+            <div class="container p-3">
+                <h2>AFORE</h2>
+                <h5>Administradora de Fondos para el Retiro</h5>
+            </div>
+            <div class="container p-3">
+                <p>
+                    Para poder realizar el cálculo de tu AFORE es necesario que ingreses
+                    la informacion en los espacios en blanco. 
+                </p>
+                <p>
+                    Si tienes dudas con respecto a que es una AFORE y una SIAFORE.
+                    Ve a la parte inferior de esta misma página.
+                </p>
+            </div>
+            <div class="container mt-4">
+                <h5>Formulario de Datos Financieros</h2>
+                <form id="form">
+                    <div class="mb-3">
+                        <label for="salary" class="form-label">Salario</label>
+                        <input type="number" class="form-control" id="salary" placeholder="Introduce tu salario mensual" required>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="starting-balance" class="form-label">Saldo Inicial</label>
+                        <input type="number" class="form-control" id="starting-balance" placeholder="Introduce tu saldo inicial (Saldo Actual de Ahorro en AFORE)" required>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="age" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="age" placeholder="Introduce tu edad" required>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="rate-of-return" class="form-label">Tasa de Rendimiento Anual (%)</label>
+                        <input type="number" class="form-control" id="rate-of-return" placeholder="Introduce la tasa de rendimiento anual" step="0.01" required>
+                    </div>
+            
+                    <div class="mb-3">
+                        <label for="period" class="form-label">Periodos</label>
+                        <p>Ex: Ahorro a los 60 años. Periodos = 60 años - Edad. Cantidad en años.</p>
+                        <input type="number" class="form-control" id="period" placeholder="Introduce el número de periodos" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Calcular</button>
+                </form>
+                <h4 class="p-3"><strong>Resultado Final: </strong><span id="final-result"></span></h4>
+            </div>
+            <hr>
+            <div>
+                <P>En la siguiente seccion podrás identificar tu <b>SIEFORE</b> a la que perteneces.</P>
+                <a href="https://www.gob.mx/consar/articulos/indicador-de-rendimiento-neto" target="_blank">
+                    <img class="container w-50" src="https://www.gob.mx/cms/uploads/article/main_image/13196/Banner_IRN_Siefores_Generacionales.jpg" alt="SIEFORES">
+                </a>
+            </div>
+            <div>
+                <p>
+                    Si desconoces a que <b>AFORE</b> perteneces, puedes conocerla en la siguiente página.
+                </p>
+            </div>
+            <div>
+                <a href="https://www.aforeweb.com.mx/localiza-tu-afore" target="_blank">
+                    <img class="w-50" src="https://www.aforeweb.com.mx/static/media/logo-afore.46cceef29f74650e42ee.png" alt="ConoceTuAfore">
+                </a>
+                <a class="nav-link" href="https://www.consar.gob.mx/wsafore/" target="_blank">También puedes usar las siguiente página de la <b>"CONSAR"</b> para su consulta</a>
+                <p>También es posible llamar al teléfono sin costo a <b>SATEL: 55 1328 5000</b></p>
+                <a href="https://www.gob.mx/consar/acciones-y-programas/en-que-afore-estoy-56776" target="_blank">
+                    <img class="w-50" src="https://www.gob.mx/cms/uploads/image/file/867678/en-que-afore-estoy_1.jpg" alt="SATEL">
+                </a>
+            </div>
+            <div class="container">
+                <p>
+                    Recordando que esta información es unica y exclusiva de SIEFORES / AFORES.
+                    En esta sección no profundizaremos acerca de la Ley del 73 ni la Ley del 97.
+                </p>
+                <p>
+                    Las personas bajo la ley 73 pueden jubilarse y recibir una pensión vitalicia,
+                    la cual se calcula de acuerdo al número de semanas cotizadas por el trabajador
+                    y al promedio salarial de los últimos 5 años. Por el contrario, las personas
+                    bajo la ley del 97 no recibirán una pensión vitalicia. Un trabajador con el
+                    mismo sueldo promedio y total de semanas cotizadas puede obtener bajo el régimen
+                    de la ley 73, una pensión de $30,000 mensuales, mientras que bajo la ley 97
+                    $8,000 y sólo mientras perdure el saldo para financiarla. Existen diferencias
+                    en ambas leyes tanto en el pago de la pensión como en el proceso y los requisitos.
+                    Los trabajadores bajo la ley 73 tienen mejores condiciones respecto a los 
+                    trabajadores dados de alta en la ley 97.
+                </p>
+            </div>
+            <div>
+                <p><b>AFORE</b></p>
+                <p>
+                    Es una institución financiera que administra los fondos de retiro de los trabajadores,
+                    invirtiendo su dinero para generar rendimientos.
+                    <b>Profuturo, SURA, INBURSA, AFORE BANAMEX, AFORE AZTECA, AFORE COOPEL</b> entre otras.
+                </p>
+                <p><b>SIEFORE</b></p>
+                <p>
+                    Es el sistema en el que operan las AFOREs, supervisando y controlando las inversiones 
+                    de los fondos de pensiones. La SIEFORE contiene a las SIEFORE Generacionales, 
+                    que a su vez contiene a las AFORES tales como.
+                    <b>SIEFORE BASICA 60-64, ... SIEFORE BASICA 95-99, SIEFORE BASICAL INICIAL</b> entre otras.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <h5>Leogaltre, Financial Services</h5>
+                    <p>© 2025 Leogaltre, Inc</p>
+                </div>
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled d-flex">
+                        <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-whatsapp"></i></a></li>
+                        <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-instagram"></i></a></li>
+                        <li class="ms-3"><a class="text-white" href="#"><i class="bi bi-facebook"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 mb-4 mb-md-0">
+                    <h5>Contacto</h5>
+                    <p>Leogaltre@gmail.com</p>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p>© 2025 Leogaltre, Inc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="afore.js"></script>
+</html>
